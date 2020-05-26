@@ -1,0 +1,8 @@
+#Sass
+sass:
+  style: compressed
+  sourcemap: never
+
+permalink: /:title:output_ext
+
+plugins: [jekyll-paginate]

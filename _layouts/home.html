@@ -1,0 +1,18 @@
+---
+layout: default
+title: Home
+---
+{% for post in site.posts %}
+
+<div class="post">
+    <h2 id = "post-title"><a href="{{ post.url  | relative_url }}">{{ post.title }}</a></h2>
+
+    <p>
+        {% if post.customexcerpt %}
+            {{post.customexcerpt | strip_html | truncatewords:50}}
+        {% else %}
+            {{ post.content | strip_html | truncatewords:50 }}
+        {% endif %}
+    </p> 
+</div>
+{% endfor %}

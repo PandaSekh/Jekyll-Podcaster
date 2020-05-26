@@ -1,0 +1,53 @@
+<script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
+
+<script>
+    //See https://github.com/sampotts/plyr for more informations about customization
+
+    const controls = 
+    [
+     "play",
+     "rewind",
+     'progress',
+     "fast-forward",
+     'current-time',
+     'duration', 
+     'mute',
+     'volume',
+     'settings',
+     'airplay',
+    ];
+
+    const player = new Plyr('#player', {
+        controls,
+        settings: ['quality', 'speed'],
+        //Italian translation, used in my website. Delete this to use English or translate the player to your language.
+        i18n: {
+            restart: 'Riavvia',
+            rewind: 'Riavvolgi di {seektime} secondi',
+            play: 'Avvia',
+            pause: 'Pausa',
+            fastForward: 'Avanza di {seektime} secondi',
+            seek: 'Cerca',
+            played: 'Riprodotto',
+            buffered: 'Bufferato',
+            currentTime: 'Tempo Corrente',
+            duration: 'Durata',
+            volume: 'Volume',
+            mute: 'Muta',
+            unmute: 'Smuta',
+            enterFullscreen: 'Tutto schermo',
+            exitFullscreen: 'Esci dal tutto schermo',
+            frameTitle: 'Player per {title}',
+            settings: 'Impostazioni',
+            speed: 'Velocità',
+            normal: 'Normale',
+            quality: 'Qualità',
+            loop: 'Loop',
+            start: 'Inizio',
+            end: 'Fine',
+            all: 'Tutto',
+            reset: 'Reset',
+            disabled: 'Disabilitato',
+        }
+    });
+</script>
