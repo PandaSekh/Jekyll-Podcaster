@@ -1,0 +1,35 @@
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:#fff;
+}
+.container{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    .content{
+        order: 1;
+        border: 1px solid black;
+        width: 55%;
+    }
+    .sidebar{
+        width: 15%;
+        order: 5;
+        background-color: white;
+        border: 1px solid;
+        padding-bottom: 30px;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    
+}
