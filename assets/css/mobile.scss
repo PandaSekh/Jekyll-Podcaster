@@ -19,3 +19,11 @@
         background-position-x: 31%;
     }
 }
+
+@media (min-width: 768px){
+    #hammenuToggle{
+        display: none !important;
+        visibility: hidden !important;
+        position: absolute !important;
+    }
+}

@@ -10,7 +10,7 @@
      'progress',
      "fast-forward",
      'current-time',
-     'duration', 
+    // 'duration', 
      'mute',
      'volume',
      'settings',
@@ -19,6 +19,8 @@
 
     const player = new Plyr('#player', {
         controls,
+        invertTime: true,
+        toggleInvert: true,
         settings: ['quality', 'speed'],
         //Italian translation, used in my website. Delete this to use English or translate the player to your language.
         i18n: {
