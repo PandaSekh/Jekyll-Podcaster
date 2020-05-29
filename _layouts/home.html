@@ -5,7 +5,9 @@ title: Home
 {% for post in paginator.posts %}
 
 <div class="post">
-    <img src="{{"/assets/img/cover.png" | relative_url}}" alt="Podcast Cover">
+    <div class = "cover-img">
+        <img src="{{post.cover}}" alt="Podcast Cover">
+    </div>
 
     <h2 id = "post-title"><a href="{{ post.url  | relative_url }}">{{ post.title }}</a></h2>
 
@@ -17,14 +19,28 @@ title: Home
     {% endcapture %}
     {% include player.html filename=filename title=title %}
 
-    <p>
-        {% if post.description %}
-            {{post.description | strip_html | truncatewords:30}}
-        {% else %}
-            {{ post.content | strip_html | truncatewords:30 }}
-        {% endif %}
-        <span class = "continue-reading"><a href="{{ post.url | relative_url }}">Continua</a></span>
-    </p> 
+    <div class = "long-excerpt">
+        <p>
+            {% if post.description %}
+                {{post.description | strip_html | truncatewords:100}}
+            {% else %}
+                {{ post.content | strip_html | truncatewords:100 }}
+            {% endif %}
+            <span class = "continue-reading"><a href="{{ post.url | relative_url }}">Continua</a></span> 
+        </p> 
+    </div>
+
+    <div class = "short-excerpt">
+        <p>
+            {% if post.description %}
+                {{post.description | strip_html | truncatewords:30}}
+            {% else %}
+                {{ post.content | strip_html | truncatewords:30 }}
+            {% endif %}
+            <span class = "continue-reading"><a href="{{ post.url | relative_url }}">Continua</a></span> 
+        </p> 
+    </div>
+
 </div>
 {% endfor %}
 

@@ -7,6 +7,9 @@
         height: 210px;
         margin-bottom: 50px;
         background-color: white;
+        p{
+            padding: 0 5px;
+        }
         a{
             color: black;
         }
@@ -22,12 +25,6 @@
            height: 210px;
            float: left;
            margin-right: 10px;
-        }
-        .continue-reading{
-            display: inline-block;
-            font-style: italic;
-            border-bottom: 1px solid $base-color;
-            line-height: 0.9;
         }
         .player-container{
             margin: 10px auto;

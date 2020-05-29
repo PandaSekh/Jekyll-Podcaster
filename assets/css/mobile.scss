@@ -9,23 +9,12 @@
         h1{
             padding: 10px;
             padding-top: 7px;
-            max-width: 300px;
+            max-width: 420px;
         }
     }
     body{
         background-size: 286%;
         background-position-x: 31%;
-    }
-}
-@media screen and (max-width: 350px){
-    #header{
-        margin-bottom: 100px;
-        h1{
-            max-width: 200px;
-        }
-    }
-    body{
-        background-size: 330%;
     }
 }
 
@@ -53,49 +42,133 @@
         }
         .sidebar{
             margin-top: 30px;
-            width: 50% !important;
+            width: 25% !important;
         }
     }
 }
-
+@media (min-width: 820px){
+    .container{
+        .content{
+            .post{
+                position: relative;
+                height: 262px;
+                .player-container{
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    margin: 0;
+                }
+                .short-excerpt{
+                    display: none;
+                }
+            }
+        }
+    }
+}
 @media (max-width: 820px){
     .container{
         .content{
             .post{
+                .long-excerpt{
+                    display: none;
+                }
                 h2{
                     a{
                         font-size: 1.2rem;
                     }
                 }
                 img{
-                    height: 134px;
+                    height: 135px;
                 }    
             height: 210px;
             }
         }
+            .sidebar{
+                margin-top: 30px;
+                width: 35% !important;
+            }
+        
     }
 }
 
 @media (max-width: 580px){
     .container{
         .content{
-            .post{    
-            height: 335px;
-            }
-            .player-container{
-                margin-top: 45px;
+            .post{
+                height: 300px;
+                img{
+                    height: 135px;
+                }
+                h2{
+                    margin: 0px;
+                    height: 135px;
+                }
+                .player-container{
+                    margin-top: 0px;
+                }
             }
         }
     }
 }
 
 @media (max-width: 520px){
-
+    #header{
+        h1{
+            max-width: 300px;
+        }
+    }
+    .container{
+        .sidebar{
+            margin-top: 30px;
+            width: 40% !important;
+        }
+    }
 }
 
-@media (max-width: 530px){
+@media (max-width: 728px){
     body{
         background-size: 300%;
         background-position-x: 40%;
     }
+}
+
+@media (max-width: 400px){
+    body{
+        background-size: 350%;
+        background-position-x: 40%;
+    }
+    .container{
+        .sidebar{
+            margin-top: 30px;
+            width: 50% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 350px){
+    #header{
+        margin-bottom: 100px;
+        h1{
+            max-width: 200px;
+        }
+    }
+    body{
+        background-size: 330%;
+    }
+}
+
+
+@media (max-width: 330px){
+ .container{
+     .content{
+         .post{
+             height: 350px;
+             h2{
+                a{
+                    font-size: 0.98rem;
+                }
+            }
+         }
+     }
+ }
 }

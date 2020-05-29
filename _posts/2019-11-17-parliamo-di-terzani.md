@@ -4,6 +4,7 @@ layout: post
 categories: [Parliamo di, Intervista]
 description: "In questo episodio del Podcast parliamo di Tiziano Terzani in compagnia del primo ospite, mio padre!"
 filename: ep5
+cover: /assets/img/cover.png
 ---
 
 <h2>{{page.title}}</h2>
