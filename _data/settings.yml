@@ -1,0 +1,28 @@
+#Pages
+pages:
+  - {name: 'Episodi', url: 'episodi.html'}
+  - {name: 'Blog', url: 'https://www.artedellalettura.it/'}
+  - {name: 'Patreon', url: 'https://www.patreon.com/artedellalettura'}
+  - {name: 'Shop', url: 'https://www.artedellalettura.it/store/'}
+
+social:
+  - {icon: 'instagram', type: "brand", link: 'https://www.instagram.com/arte_della_lettura/'}
+  - {icon: 'twitter', type: "brand", link: 'https://twitter.com/ArteLettura'}
+  - {icon: 'facebook', type: "brand", link: 'https://www.facebook.com/arte.lettura/'}
+  - {icon: 'youtube', type: "brand", link: 'https://www.youtube.com/channel/UCwy9OpiuWjhZyBcAjuXz02w'}  
+  - {icon: 'envelope', type: "solid", link: 'mailto:podcast@artedellalettura.it'}
+  - {icon: 'rss', type: "solid", link: "https://anchor.fm/s/135fe8b8/podcast/rss"}
+
+siti-podcast:
+  - {name: 'Apple Podcast', link: 'https://podcasts.apple.com/it/podcast/arte-della-lettura-podcast/id1473677332'}
+  - {name: 'Spotify', link: 'https://open.spotify.com/show/2yre1D5uOEIHFh0UcNyoTu'}
+  - {name: 'YouTube', link: 'https://www.youtube.com/channel/UCwy9OpiuWjhZyBcAjuXz02w'}
+  - {name: 'Android', link: 'https://subscribeonandroid.com/anchor.fm/s/135fe8b8/podcast/rss'}
+  - {name: 'Spreaker', link: 'https://www.spreaker.com/show/arte-della-lettura-podcast'}
+  - {name: 'Google Podcast', link: 'https://podcasts.google.com/?feed=aHR0cHM6Ly93d3cuc3ByZWFrZXIuY29tL3Nob3cvMzYyNjM3NC9lcGlzb2Rlcy9mZWVk'}
+  - {name: 'Anchor', link: 'https://anchor.fm/artedellalettura'}
+  - {name: 'Castbox', link: 'https://castbox.fm/channel/2605143?country=it'}
+  - {name: 'Overcast', link: 'https://overcast.fm/itunes1473677332/arte-della-lettura-podcast'}
+  - {name: 'RadioPublic', link: 'https://radiopublic.com/arte-della-lettura-podcast-GZ00o9'}
+  - {name: 'Breaker', link: 'https://www.breaker.audio/arte-della-lettura-podcast'}  
+  - {name: 'RSS', link: 'https://anchor.fm/s/135fe8b8/podcast/rss'}

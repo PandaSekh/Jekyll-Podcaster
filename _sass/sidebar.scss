@@ -1,13 +1,87 @@
+$twitter: #1DA1F2;
+$rss: #f26522;
+$mail: #5d5c5d;
+$instagram: #e1306c;
+$facebook: #3b5998;
+$youtube: #ff0000;
+$grey: #a2a2a2;
+
 .container{
     .sidebar{
         width: 15%;
         order: 5;
         background-color: white;
         padding-bottom: 30px;
+        margin-bottom: 50px;
+        border-radius: 10px;
+        text-align: center;
+        -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.5);
+        box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.5);
+        #info{
+            margin-left: 6px;
+            margin-right: 6px;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style-type: none;
+            li{
+                margin-bottom: 3px;
+                a{
+                    color: $base-color;
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
         img{
             max-width: 100%;
             height: auto;
-            //border: 1px solid white;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        #social::before{
+            display: block;
+            content: '';
+            width: 5rem;
+            height: 1px;
+            margin: 23px auto;
+            background-color: #d5d5d5;
+        }
+        #social::after{
+            display: block;
+            content: '';
+            width: 5rem;
+            height: 1px;
+            margin: 23px auto;
+            background-color: #d5d5d5;
+        }
+        #social{
+            a{
+                color: $grey;
+                margin: 2px;
+            }
+            #twitter:hover{
+                color: $twitter;
+            }
+            #rss:hover{
+                color: $rss;
+            }
+            #envelope:hover{
+                color: $mail;
+            }
+            #instagram:hover{
+                color: $instagram;
+            }
+            #facebook:hover{
+                color: $facebook;
+            }
+            #youtube:hover{
+                color: $youtube;
+            }
         }
     }
 }

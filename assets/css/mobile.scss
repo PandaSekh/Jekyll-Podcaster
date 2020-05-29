@@ -1,7 +1,49 @@
 ---
 ---
+@media screen and (max-width: 990px){
 
-@media screen and (max-width: 768px){
+    #header{
+        #desktop-nav{
+            display: none;
+        }
+        h1{
+            padding: 10px;
+            padding-top: 7px;
+            max-width: 300px;
+        }
+    }
+    body{
+        background-size: 286%;
+        background-position-x: 31%;
+    }
+}
+@media screen and (max-width: 350px){
+    #header{
+        margin-bottom: 100px;
+        h1{
+            max-width: 200px;
+        }
+    }
+    body{
+        background-size: 330%;
+    }
+}
+
+@media (min-width: 990px){
+    #hammenuToggle{
+        display: none !important;
+        visibility: hidden !important;
+        position: absolute !important;
+    }
+}
+
+@media (max-width: 1400px){
+    body{
+        background-size: 140%;
+    }
+}
+
+@media (max-width: 1330px){
     .container{
         flex-direction: column;
         align-items: center;
@@ -14,22 +56,46 @@
             width: 50% !important;
         }
     }
-    #header{
-        h1{
-            padding: 10px;
-            padding-top: 7px;
+}
+
+@media (max-width: 820px){
+    .container{
+        .content{
+            .post{
+                h2{
+                    a{
+                        font-size: 1.2rem;
+                    }
+                }
+                img{
+                    height: 134px;
+                }    
+            height: 210px;
+            }
         }
-    }
-    body{
-        background-size: 286%;
-        background-position-x: 31%;
     }
 }
 
-@media (min-width: 768px){
-    #hammenuToggle{
-        display: none !important;
-        visibility: hidden !important;
-        position: absolute !important;
+@media (max-width: 580px){
+    .container{
+        .content{
+            .post{    
+            height: 335px;
+            }
+            .player-container{
+                margin-top: 45px;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px){
+
+}
+
+@media (max-width: 530px){
+    body{
+        background-size: 300%;
+        background-position-x: 40%;
     }
 }

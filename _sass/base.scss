@@ -12,6 +12,10 @@ html{
     scroll-behavior: smooth;
 }
 
+a{
+    text-decoration: none;
+}
+
 .container{
     display: flex;
     flex-direction: row;

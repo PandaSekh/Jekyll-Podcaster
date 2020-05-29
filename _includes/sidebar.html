@@ -1,4 +1,26 @@
 <img src="/assets/img/cover.png" alt="Cover">
 
-<h3>Arte della Lettura Podcast</h3>
-<h4><i>Parlo di libri</i></h4>
+<div id = "info">
+    <h3>{{site.title}}</h3>
+    <h4><i>{{site.description}}</i></h4>
+</div>
+<div id = "social">
+    {% for item in site.data.settings.social %}
+    {% if item.type == "brand"%}
+      <a href="{{ item.link }}" target="_blank" id="{{item.icon}}"><i class="fab fa-{{item.icon}}" aria-hidden="true"></i></a>
+    {% endif %}
+    {% if item.type == "solid"%}
+      <a href="{{ item.link }}" target="_blank" id="{{item.icon}}"><i class="fas fa-{{item.icon}}" aria-hidden="true"></i></a>
+    {% endif %} 
+  {% endfor %}
+</div>
+<div id = "ascoltare">
+    <h3>Dove Ascoltare</h3>
+    <div id = "lista-siti">
+        <ul id = "siti">
+          {% for item in site.data.settings.siti-podcast  %}
+          <li><a href="{{ item.url | relative_url}}"> {{ item.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+</div>

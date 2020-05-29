@@ -1,10 +1,41 @@
 #header{
-   // background-color: $base-color;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     min-height: 50px;
+    margin-bottom: 150px;
     h1{
-        margin: auto;
         padding: 20px;
-        color: white;
+        a{
+          color: white;
+        }
+    }
+
+    #desktop-nav{
+      #desktop-menu{
+        list-style: none;
+        margin: 0;
+        margin-right: 180px;
+        padding: 0;
+        overflow: hidden;
+        ul{
+          display:inline;
+        }
+        li{
+          float: left;
+          margin-right: 10px;
+          a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+          }
+          a:hover{
+            text-decoration: underline;
+          }
+        }
+      }
     }
 
     //start menu
@@ -120,7 +151,7 @@
     {
       position: fixed;
       width: 300px;
-      margin: 10px 0 200px -220px;
+      margin: 10px 0 200px -135px;
       padding: 50px;
       
      // background: #ededed;

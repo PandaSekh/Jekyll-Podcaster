@@ -1,10 +1,17 @@
 <div id = "header">
-    <h1>Arte della Lettura <span>Podcast</span></h1>
+    <h1><a href="{{site.url}}">{{site.title}}</a></h1>
     <div class = "wave">
     </div>
 
     <nav role="navigation">
-        <div id="hammenuToggle">
+      <div id = "desktop-nav">
+        <ul id = "desktop-menu">
+          {% for item in site.data.settings.pages  %}
+          <li><a href="{{ item.url | relative_url}}"> {{ item.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div id="hammenuToggle">
           <input type="checkbox" />
     
           <span></span>
@@ -12,13 +19,11 @@
           <span></span>
           
     
-          <ul id="menu">
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>Info</li></a>
-            <a href="#"><li>Contact</li></a>
-            <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+          <ul id = "menu">
+            {% for item in site.data.settings.pages %}
+            <li><a href="{{ item.url | relative_url}}">  {{ item.name }}</a></li>
+            {% endfor %}
           </ul>
         </div>
-      </nav>
+    </nav>
 </div>

@@ -1,8 +1,23 @@
+# Site settings
+title: Arte della Lettura Podcast
+description: "Quattro chiacchiere su libri e fumetti"
+podcast-description: "Arte della Lettura è il Podcast dedicato a libri e fumetti con episodi su eventi, autori e temi libreschi."
+url:  "https://podcast.artedellalettura.it" # Actual base url of the website
+baseurl: "/"           # url of the jekyll blog. e.g. if you set url to "mysite.com" and baseurl to "blog", the jekyll website will work on "mysite.com/blog"
+author:
+  name: "Alessio Franceschi"
+  email: "alessiofranceschi2@gmail.com"
+  url: "https://alessiofranceschi.me"
+permalink: /:title:output_ext
+
+#Plugins
+plugins: [jekyll-paginate, jekyll-feed, jekyll-seo-tag, jekyll-sitemap]
+
+#Pagination
+paginate: 6
+paginate_path: "/page:num/"
+
 #Sass
 sass:
   style: compressed
   sourcemap: never
-
-permalink: /:title:output_ext
-
-plugins: [jekyll-paginate]

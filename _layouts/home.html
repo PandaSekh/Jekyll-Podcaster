@@ -2,17 +2,41 @@
 layout: default
 title: Home
 ---
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 
 <div class="post">
+    <img src="{{"/assets/img/cover.png" | relative_url}}" alt="Podcast Cover">
+
     <h2 id = "post-title"><a href="{{ post.url  | relative_url }}">{{ post.title }}</a></h2>
 
+    {% capture filename %}
+        {{- post.filename -}}
+    {% endcapture %}
+    {% capture title %}
+        {{- post.title -}}
+    {% endcapture %}
+    {% include player.html filename=filename title=title %}
+
     <p>
-        {% if post.customexcerpt %}
-            {{post.customexcerpt | strip_html | truncatewords:50}}
+        {% if post.description %}
+            {{post.description | strip_html | truncatewords:30}}
         {% else %}
-            {{ post.content | strip_html | truncatewords:50 }}
+            {{ post.content | strip_html | truncatewords:30 }}
         {% endif %}
+        <span class = "continue-reading"><a href="{{ post.url | relative_url }}">Continua</a></span>
     </p> 
 </div>
 {% endfor %}
+
+
+<!-- Pagination links -->
+<div class = "paginator">
+    {% if paginator.total_pages > 1 %}
+    {% if paginator.next_page %}
+      <a class = "older paginate-button" href="{{ paginator.next_page_path | relative_url }}">Older Posts</a>
+    {% endif %}
+    {% if paginator.previous_page %}
+    <a class = "newer paginate-button" href="{{ paginator.previous_page_path | relative_url }}">Newer Posts</a>
+  {% endif %}
+  {% endif %}
+</div>

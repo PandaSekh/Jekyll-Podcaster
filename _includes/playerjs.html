@@ -17,7 +17,43 @@
      'airplay',
     ];
 
-    const player = new Plyr('#player', {
+    const players = Array.from(document.querySelectorAll(".player"));
+        players.map(player => new Plyr(player, {
+            controls,
+        invertTime: true,
+        toggleInvert: true,
+        settings: ['quality', 'speed'],
+        //Italian translation, used in my website. Delete this to use English or translate the player to your language.
+        i18n: {
+            restart: 'Riavvia',
+            rewind: 'Riavvolgi di {seektime} secondi',
+            play: 'Avvia',
+            pause: 'Pausa',
+            fastForward: 'Avanza di {seektime} secondi',
+            seek: 'Cerca',
+            played: 'Riprodotto',
+            buffered: 'Bufferato',
+            currentTime: 'Tempo Corrente',
+            duration: 'Durata',
+            volume: 'Volume',
+            mute: 'Muta',
+            unmute: 'Smuta',
+            enterFullscreen: 'Tutto schermo',
+            exitFullscreen: 'Esci dal tutto schermo',
+            frameTitle: 'Player per {title}',
+            settings: 'Impostazioni',
+            speed: 'Velocità',
+            normal: 'Normale',
+            quality: 'Qualità',
+            loop: 'Loop',
+            start: 'Inizio',
+            end: 'Fine',
+            all: 'Tutto',
+            reset: 'Reset',
+            disabled: 'Disabilitato',
+        }}));
+
+    /*const player = new Plyr('#player', {
         controls,
         invertTime: true,
         toggleInvert: true,
@@ -51,5 +87,5 @@
             reset: 'Reset',
             disabled: 'Disabilitato',
         }
-    });
+    });*/
 </script>
