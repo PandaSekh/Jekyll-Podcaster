@@ -73,6 +73,7 @@
                     display: none;
                 }
                 h2{
+                    line-height: 1.4rem;
                     a{
                         font-size: 1.2rem;
                     }
@@ -80,7 +81,7 @@
                 img{
                     height: 135px;
                 }    
-            height: 210px;
+            height: 230px;
             }
         }
             .sidebar{
@@ -101,10 +102,12 @@
                 }
                 h2{
                     margin: 0px;
-                    height: 135px;
                 }
                 .player-container{
                     margin-top: 0px;
+                }
+                .title{
+                    height: 135px;
                 }
             }
         }
@@ -121,7 +124,7 @@
         .sidebar{
             margin-top: 30px;
             width: 40% !important;
-        }
+        } 
     }
 }
 
@@ -132,7 +135,7 @@
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 420px){
     body{
         background-size: 350%;
         background-position-x: 40%;
@@ -141,7 +144,16 @@
         .sidebar{
             margin-top: 30px;
             width: 50% !important;
-        }
+        }           
+        .post{
+            height: 325px !important;
+            .info{
+                font-size: 0.95rem;
+            }
+            h2{
+                line-height: 1.3rem !important;
+            }
+        } 
     }
 }
 

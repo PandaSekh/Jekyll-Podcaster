@@ -26,3 +26,17 @@ siti-podcast:
   - {name: 'RadioPublic', link: 'https://radiopublic.com/arte-della-lettura-podcast-GZ00o9'}
   - {name: 'Breaker', link: 'https://www.breaker.audio/arte-della-lettura-podcast'}  
   - {name: 'RSS', link: 'https://anchor.fm/s/135fe8b8/podcast/rss'}
+
+months:
+    - Gennaio
+    - Febbraio
+    - Marzo
+    - Aprile
+    - Maggio
+    - Giugno
+    - Luglio
+    - Agosto
+    - Settembre
+    - Ottobre
+    - Novembre
+    - Dicembre

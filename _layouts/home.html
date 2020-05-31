@@ -4,12 +4,25 @@ title: Home
 ---
 {% for post in paginator.posts %}
 
+
+
 <div class="post">
+
     <div class = "cover-img">
         <img src="{{post.cover}}" alt="Podcast Cover">
     </div>
 
-    <h2 id = "post-title"><a href="{{ post.url  | relative_url }}">{{ post.title }}</a></h2>
+    <div class = title>
+        <h2 id = "post-title"><a href="{{ post.url  | relative_url }}">{{ post.title }}</a></h2>
+
+        <div class = "info">
+            <span>
+                <i class="far fa-calendar" aria-hidden="true"></i>
+                <time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{%- include date.html date=post.date -%}</time> - <i class="far fa-clock"></i> {{post.length}}
+            </span>
+        </div>
+    </div>
+
 
     {% capture filename %}
         {{- post.filename -}}
