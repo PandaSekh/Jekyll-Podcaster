@@ -35,4 +35,28 @@
             font-style: italic;
         }
     }
+    .pagination a, .pagination span {
+        padding: 7px 18px;
+        border: 1px solid #eee;
+        margin-left: -2px;
+        margin-right: -2px;
+        background-color: #ffffff;
+        display: inline-block;
+        color: $base-color;
+      }
+    
+    .pagination a {    
+        &:hover {
+            background-color: #f1f1f1;
+            color: #333;
+        }
+     }
+    
+    .pagination {
+        text-align: center;
+        margin-bottom: 30px;
+        .inactive{
+            background-color: #f1f1f1;
+        }
+     }
 }

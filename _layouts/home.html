@@ -9,7 +9,11 @@ title: Home
 <div class="post">
 
     <div class = "cover-img">
+      {% if post.cover %}
         <img src="{{post.cover}}" alt="Podcast Cover">
+      {% else %}
+        <img src="{{ "/assets/img/cover.png" | relative_url}}" alt="Podcast Cover">
+      {% endif %}
     </div>
 
     <div class = title>
@@ -64,12 +68,12 @@ title: Home
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prec</a>
   {% else %}
-    <span>&laquo; Prec</span>
+    <span class = "inactive">&laquo; Prec</span>
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
-      <span class="webjeda">{{ page }}</span>
+      <span class = "inactive">{{ page }}</span>
     {% elsif page == 1 %}
       <a href="/">{{ page }}</a>
     {% else %}
@@ -80,7 +84,7 @@ title: Home
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Succ &raquo;</a>
   {% else %}
-    <span>Succ &raquo;</span>
+    <span class = "inactive">Succ &raquo;</span>
   {% endif %}
 </div>
 {% endif %}
