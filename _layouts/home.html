@@ -59,13 +59,28 @@ title: Home
 
 
 <!-- Pagination links -->
-<div class = "paginator">
-    {% if paginator.total_pages > 1 %}
-    {% if paginator.next_page %}
-      <a class = "older paginate-button" href="{{ paginator.next_page_path | relative_url }}">Older Posts</a>
-    {% endif %}
-    {% if paginator.previous_page %}
-    <a class = "newer paginate-button" href="{{ paginator.previous_page_path | relative_url }}">Newer Posts</a>
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prec</a>
+  {% else %}
+    <span>&laquo; Prec</span>
   {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="webjeda">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a href="/">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Succ &raquo;</a>
+  {% else %}
+    <span>Succ &raquo;</span>
   {% endif %}
 </div>
+{% endif %}

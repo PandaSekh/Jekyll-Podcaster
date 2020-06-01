@@ -1,10 +1,58 @@
 .container{
     .content{
-        img{
-            max-width: 400px;
-        }
-        p{
-            font-size: 1.1rem;
+        .single-post{
+            padding-bottom: 200px;
+            img{
+                max-width: 400px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                margin-bottom: 20px;
+                margin-top: 10px;
+            }
+            p{
+                font-size: 1.1rem;
+            }
+            h2{
+                text-align: center;
+            }
+            h3{
+                text-align: center;
+                margin-top: 30px;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                display: inline-block;
+                font-style: italic;
+                border-bottom: 1px solid $base-color;
+                line-height: 0.9;
+                transition: background-color 0.1s cubic-bezier(.33,.66,.66,1);
+            }
+            a:hover{
+                background-color: rgba(1,160,228,0.3);
+                border-bottom: none;
+            }
+            .video{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%; 
+                margin-bottom: 30px;
+                height: 0;
+                overflow: hidden;
+                padding-bottom: 29.25%;
+                padding-top: 30px;
+                position: relative;
+                iframe, object, embed{
+                    height: 100%;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                }
+            }
         }
     }
 }

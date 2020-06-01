@@ -14,8 +14,8 @@ permalink: /:title:output_ext
 plugins: [jekyll-paginate, jekyll-feed, jekyll-seo-tag, jekyll-sitemap]
 
 #Pagination
-paginate: 6
-paginate_path: "/page:num/"
+paginate: 4
+paginate_path: "/pagina-:num/"
 
 #Sass
 sass:

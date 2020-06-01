@@ -2,4 +2,25 @@
 layout: default
 ---
 
+<div class = "single-post">
+<h2>{{page.title}}</h2>
+
+<img src="{{ page.cover }}" alt="Podcast Cover">
+    
+<p>{{page.description}}</p>
+
+{% capture filename %}
+        {{- page.filename -}}
+{% endcapture %}
+{% capture title %}
+        {{- page.title -}}
+{% endcapture %}
+
+{% include player.html filename=filename title=page.title %}
+
+{% include video.html videoid = page.videoid %}
+
 {{ content }}
+
+{% include shownotes.html %}
+</div>
