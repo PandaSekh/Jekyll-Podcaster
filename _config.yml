@@ -17,7 +17,7 @@ plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
 exclude: [_podcast.rss]
 
 #Pagination
-paginate: 4
+paginate: 3
 paginate_path: "/pagina-:num/"
 
 #Sass
@@ -31,7 +31,7 @@ twitter:
   card: summary
 facebook:
   app_id: "743664233037553"
-logo: /assets/img/cover.png
+logo: /assets/img/Podcast_Cover.png
 social:
   name: Arte della Lettura
   links:
