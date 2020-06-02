@@ -14,6 +14,7 @@ keywords: [libri , libro , lettura , letteratura , leggere]
 #Plugins
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
 
+exclude: [_podcast.rss]
 
 #Pagination
 paginate: 4
