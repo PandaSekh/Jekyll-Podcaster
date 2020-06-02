@@ -9,7 +9,7 @@ author:
   email: "alessiofranceschi2@gmail.com"
   url: "https://alessiofranceschi.me"
 permalink: /:title
-keywords: [libri, libro, lettura, letteratura, leggere]
+keywords: [libri , libro , lettura , letteratura , leggere]
 
 #Plugins
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
