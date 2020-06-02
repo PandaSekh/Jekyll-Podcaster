@@ -8,10 +8,12 @@ author:
   name: "Alessio Franceschi"
   email: "alessiofranceschi2@gmail.com"
   url: "https://alessiofranceschi.me"
-permalink: /:title:output_ext
+permalink: /:title
+keywords: [libri, libro, lettura, letteratura, leggere]
 
 #Plugins
-plugins: [jekyll-paginate, jekyll-feed, jekyll-seo-tag, jekyll-sitemap]
+plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap, audioinfo, jekyll-feed]
+
 
 #Pagination
 paginate: 4
@@ -21,3 +23,34 @@ paginate_path: "/pagina-:num/"
 sass:
   style: compressed
   sourcemap: never
+
+#SEO
+twitter:
+  username: ArteLettura
+  card: summary
+facebook:
+  app_id: "743664233037553"
+logo: /assets/img/cover.png
+social:
+  name: Arte della Lettura
+  links:
+    - https://www.instagram.com/arte_della_lettura/
+    - https://twitter.com/ArteLettura
+    - https://www.facebook.com/arte.lettura/
+    - https://www.youtube.com/channel/UCwy9OpiuWjhZyBcAjuXz02w
+lang: it
+
+#Podcast
+podcast_title: Arte della Lettura Podcast
+podcast_author: Alessio Franceschi
+podcast_email: podcast@artedellalettura.it
+podcast_subtitle: "Quattro chiacchiere su libri e fumetti"
+podcast_summary: "Arte della Lettura è il Podcast dedicato a libri e fumetti con episodi su eventi, autori e temi libreschi."
+podcast_description: "Arte della Lettura è il Podcast dedicato a libri e fumetti con episodi su eventi, autori e temi libreschi."
+podcast_explicit: "no"
+podcast_type: serial 
+podcast_lang: it
+podcast_launch: "2019-07-20"
+podcast_copyright: "&#xA9;Alessio Franceschi"
+podcast_feed: 
+podcast_artwork: "/assets/img/Podcast_Cover.png"

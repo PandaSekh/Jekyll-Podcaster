@@ -1,3 +1,5 @@
+analytics-id: UA-120959156-1
+
 #Pages
 pages:
   - {name: 'Episodi', url: 'episodi.html'}
@@ -40,3 +42,7 @@ months:
     - Ottobre
     - Novembre
     - Dicembre
+
+#Disqus
+disqus:
+  disqus_shortname: "alessio-franceschi-blog"
