@@ -12,7 +12,7 @@ permalink: /:title
 keywords: [libri, libro, lettura, letteratura, leggere]
 
 #Plugins
-plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap, audioinfo, jekyll-feed]
+plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
 
 
 #Pagination

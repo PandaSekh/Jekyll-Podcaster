@@ -9,6 +9,5 @@ summary: Una breve introduzione per spiegare quello che sarà Arte della Lettura
 file: ep0_intro
 duration: "1284" #in seconds
 length: "21:24"
-cover: /assets/img/cover.png
 videoid: eZzKgW8KBME
 ---
