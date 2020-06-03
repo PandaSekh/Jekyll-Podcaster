@@ -8,6 +8,7 @@ author:
   name: "Alessio Franceschi"
   email: "alessiofranceschi2@gmail.com"
   url: "https://alessiofranceschi.me"
+permalink: pretty
 permalink: /:title
 keywords: [libri , libro , lettura , letteratura , leggere]
 
@@ -17,7 +18,7 @@ plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
 exclude: [_podcast.rss]
 
 #Pagination
-paginate: 3
+paginate: 5
 paginate_path: "/pagina-:num/"
 
 #Sass

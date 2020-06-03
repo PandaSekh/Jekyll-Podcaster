@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /cat/
+permalink: /categorie
 title: Categorie
 ---
 {% assign sorted_categories = site.categories | sort %}
