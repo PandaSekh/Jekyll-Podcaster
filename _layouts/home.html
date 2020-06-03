@@ -28,13 +28,13 @@ title: Home
     </div>
 
 
-    {% capture filename %}
-        {{- post.filename -}}
+    {% capture file %}
+        {{- post.file -}}
     {% endcapture %}
     {% capture title %}
         {{- post.title -}}
     {% endcapture %}
-    {% include player.html filename=filename title=title %}
+    {% include player.html file=file title=title %}
 
     <div class = "long-excerpt">
         <p>
