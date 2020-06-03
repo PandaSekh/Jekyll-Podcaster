@@ -1,4 +1,4 @@
-<img src="assets/img/Podcast_Cover_Small.jpg" alt="Podcast cover">
+<img src="{{"assets/img/Podcast_Cover_500.jpg" | absolute_url}}" alt="Podcast Cover">
 
 <div id = "info">
     <h3>{{site.title}}</h3>
@@ -19,7 +19,7 @@
     <div id = "lista-siti">
         <ul id = "siti">
           {% for item in site.data.settings.siti-podcast  %}
-          <li><a href="{{ item.url | relative_url}}"> {{ item.name }}</a></li>
+          <li><a href="{{ item.url | absolute_url}}"> {{ item.name }}</a></li>
           {% endfor %}
         </ul>
       </div>

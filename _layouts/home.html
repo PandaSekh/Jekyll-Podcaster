@@ -12,12 +12,12 @@ title: Home
       {% if post.cover %}
         <img src="{{post.cover}}" alt="Podcast Cover">
       {% else %}
-        <img src="{{ "/assets/img/Podcast_Cover_Small.jpg" | relative_url}}" alt="Podcast Cover">
+        <img src="{{ "/assets/img/Podcast_Cover_Small.jpg" | absolute_url}}" alt="Podcast Cover">
       {% endif %}
     </div>
 
     <div class = title>
-        <h2 id = "post-title"><a href="{{ post.url  | relative_url }}">{{ post.title }}</a></h2>
+        <h2 id = "post-title"><a href="{{ post.url  | absolute_url }}">{{ post.title }}</a></h2>
 
         <div class = "info">
             <span>
@@ -43,7 +43,7 @@ title: Home
             {% else %}
                 {{ post.content | strip_html | truncatewords:100 }}
             {% endif %}
-            <span class = "continue-reading"><a href="{{ post.url | relative_url }}">Continua</a></span> 
+            <span class = "continue-reading"><a href="{{ post.url | absolute_url }}">Continua</a></span> 
         </p> 
     </div>
 
@@ -54,7 +54,7 @@ title: Home
             {% else %}
                 {{ post.content | strip_html | truncatewords:30 }}
             {% endif %}
-            <span class = "continue-reading"><a href="{{ post.url | relative_url }}">Continua</a></span> 
+            <span class = "continue-reading"><a href="{{ post.url | absolute_url }}">Continua</a></span> 
         </p> 
     </div>
 

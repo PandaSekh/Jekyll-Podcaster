@@ -4,7 +4,7 @@ layout: post
 categories: [Wrap-Up]
 type: extra
 description: Wrap-Up dei libri letti nel mese di Ottobre 2019. È stato un mese ricco, con libri tra cui Ruin and Rising di Leigh Bardugo, Niente canzoni d'amore di Charles Bukowski, La strada di Corman McCarthy e altri.
-filename: extra_wu_ottobre
+file: https://adlpodcast.s3.eu-west-3.amazonaws.com/extra_wu_ottobre.mp3
 length: "52:14"
 videoid: Y6X3Yz_7CMw
 ---
