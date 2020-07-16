@@ -15,10 +15,10 @@
   {% endfor %}
 </div>
 <div id = "ascoltare">
-    <h3>Dove Ascoltare</h3>
+    <h3>Where To Listen</h3>
     <div id = "lista-siti">
         <ul id = "siti">
-          {% for item in site.data.settings.siti-podcast  %}
+          {% for item in site.data.settings.websites-podcast  %}
           <li><a href="{{ item.url | absolute_url}}"> {{ item.name }}</a></li>
           {% endfor %}
         </ul>

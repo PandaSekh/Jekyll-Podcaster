@@ -1,7 +1,7 @@
 ---
 layout: default
-permalink: /categorie
-title: Categorie
+permalink: /categories
+title: Categories
 ---
 {% assign sorted_categories = site.categories | sort %}
 {% for category in sorted_categories %}
@@ -11,9 +11,9 @@ title: Categorie
         <h2>{{ category_name }}</h2>
 
         <ul>
-        {% for post in site.categories[category_name] %}
-        <li><a class="archive-link" href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
-        {% endfor %}
+          {% for post in site.categories[category_name] %}
+            <li><a class="archive-link" href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
+          {% endfor %}
         </ul>
     </div>
   </div>

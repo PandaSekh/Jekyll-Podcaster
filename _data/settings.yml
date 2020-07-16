@@ -1,48 +1,37 @@
-analytics-id: "UA-120959156-1"
-
+analytics-id: 
 #Pages
 pages:
-  - {name: 'Episodi', url: 'episodi.html'}
-  - {name: 'Blog', url: 'https://www.artedellalettura.it/'}
-  - {name: 'Patreon', url: 'https://www.patreon.com/artedellalettura'}
-  - {name: 'Shop', url: 'https://www.artedellalettura.it/store/'}
+  - {name: 'Episodes', url: 'episodes.html'}
+  - {name: 'Blog', url: '#'}
+  - {name: 'Patreon', url: '#'}
+  - {name: 'Shop', url: '#'}
+  - {name: 'GitHub', url: 'https://github.com/PandaSekh'}
+  - {name: 'Get This Theme', url: 'https://github.com/PandaSekh/Jekyll-Podcaster'}
 
 social:
-  - {icon: 'instagram', type: "brand", link: 'https://www.instagram.com/arte_della_lettura/'}
+  - {icon: 'instagram', type: "brand", link: '#'}
   - {icon: 'twitter', type: "brand", link: 'https://twitter.com/ArteLettura'}
-  - {icon: 'facebook', type: "brand", link: 'https://www.facebook.com/arte.lettura/'}
-  - {icon: 'youtube', type: "brand", link: 'https://www.youtube.com/channel/UCwy9OpiuWjhZyBcAjuXz02w'}  
-  - {icon: 'envelope', type: "solid", link: 'mailto:podcast@artedellalettura.it'}
-  - {icon: 'rss', type: "solid", link: "https://anchor.fm/s/135fe8b8/podcast/rss"}
+  - {icon: 'facebook', type: "brand", link: '#'}
+  - {icon: 'youtube', type: "brand", link: '#'}  
+  - {icon: 'envelope', type: "solid", link: 'mailto:alessiofranceschi2@gmail.com'}
+  - {icon: 'rss', type: "solid", link: "#"}
 
-siti-podcast:
-  - {name: 'Apple Podcast', link: 'https://podcasts.apple.com/it/podcast/arte-della-lettura-podcast/id1473677332'}
-  - {name: 'Spotify', link: 'https://open.spotify.com/show/2yre1D5uOEIHFh0UcNyoTu'}
-  - {name: 'YouTube', link: 'https://www.youtube.com/channel/UCwy9OpiuWjhZyBcAjuXz02w'}
-  - {name: 'Android', link: 'https://subscribeonandroid.com/anchor.fm/s/135fe8b8/podcast/rss'}
-  - {name: 'Spreaker', link: 'https://www.spreaker.com/show/arte-della-lettura-podcast'}
-  - {name: 'Google Podcast', link: 'https://podcasts.google.com/?feed=aHR0cHM6Ly93d3cuc3ByZWFrZXIuY29tL3Nob3cvMzYyNjM3NC9lcGlzb2Rlcy9mZWVk'}
-  - {name: 'Anchor', link: 'https://anchor.fm/artedellalettura'}
-  - {name: 'Castbox', link: 'https://castbox.fm/channel/2605143?country=it'}
-  - {name: 'Overcast', link: 'https://overcast.fm/itunes1473677332/arte-della-lettura-podcast'}
-  - {name: 'RadioPublic', link: 'https://radiopublic.com/arte-della-lettura-podcast-GZ00o9'}
-  - {name: 'Breaker', link: 'https://www.breaker.audio/arte-della-lettura-podcast'}  
-  - {name: 'RSS', link: 'https://anchor.fm/s/135fe8b8/podcast/rss'}
+websites-podcast:
+  - {name: 'Apple Podcast', link: '#'}
+  - {name: 'Spotify', link: '#'}
+  - {name: 'YouTube', link: '#'}
+  - {name: 'Android', link: '#'}
+  - {name: 'Spreaker', link: '#'}
+  - {name: 'Google Podcast', link: '#'}
+  - {name: 'Anchor', link: '#'}
+  - {name: 'Castbox', link: '#'}
+  - {name: 'Overcast', link: '#'}
+  - {name: 'RadioPublic', link: '#'}
+  - {name: 'Breaker', link: '#'}  
+  - {name: 'RSS', link: '#'}
 
-months:
-    - Gennaio
-    - Febbraio
-    - Marzo
-    - Aprile
-    - Maggio
-    - Giugno
-    - Luglio
-    - Agosto
-    - Settembre
-    - Ottobre
-    - Novembre
-    - Dicembre
+translate-date: true #See _includes/date.html to translate the months' name
 
 #Disqus
 disqus:
-  disqus_shortname: "alessio-franceschi-blog"
+  disqus_shortname: 

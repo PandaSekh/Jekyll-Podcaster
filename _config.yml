@@ -1,25 +1,25 @@
 # Site settings
-title: Arte della Lettura Podcast
-description: "Quattro chiacchiere su libri e fumetti"
-podcast-description: "Arte della Lettura è il Podcast dedicato a libri e fumetti con episodi su eventi, autori e temi libreschi."
-url:  "https://podcast.artedellalettura.it" # Actual base url of the website
-baseurl: "/"           # url of the jekyll blog. e.g. if you set url to "mysite.com" and baseurl to "blog", the jekyll website will work on "mysite.com/blog"
+title: "Jekyll Podcaster"
+description: "A Jekyll Theme designed for Podcasters"
+podcast-description: "A Jekyll Theme designed for Podcasters. This is your podcast's summary."
+url:  "https://jekyll-podcaster.netlify.app/" # Actual base url of the website
+baseurl: "/"                    # url of the jekyll blog. e.g. if you set url to "mysite.com" and baseurl to "blog", the jekyll website will work on "mysite.com/blog"
 author:
   name: "Alessio Franceschi"
   email: "alessiofranceschi2@gmail.com"
   url: "https://alessiofranceschi.me"
 permalink: pretty
 permalink: /:title
-keywords: [libri , libro , lettura , letteratura , leggere]
+keywords: [podcast, jekyll]
 
 #Plugins
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
 
-exclude: [_podcast.rss]
+#exclude: [_podcast.rss] #Ignore this, it will be used in case I decide to add rss feed
 
 #Pagination
 paginate: 5
-paginate_path: "/pagina-:num/"
+paginate_path: "/page-:num/"
 
 #Sass
 sass:
@@ -28,31 +28,30 @@ sass:
 
 #SEO
 twitter:
-  username: ArteLettura
+  username: PandaSekh
   card: summary
 facebook:
-  app_id: "743664233037553"
+  app_id: 
 logo: /assets/img/Podcast_Cover.png
 social:
-  name: Arte della Lettura
+  name: Alessio Franceschi
   links:
-    - https://www.instagram.com/arte_della_lettura/
-    - https://twitter.com/ArteLettura
-    - https://www.facebook.com/arte.lettura/
-    - https://www.youtube.com/channel/UCwy9OpiuWjhZyBcAjuXz02w
+    - https://github.com/PandaSekh
+    - https://twitter.com/PandaSekh
+    - https://www.linkedin.com/in/alessio-franceschi/
 lang: it
 
-#Podcast
-podcast_title: Arte della Lettura Podcast
+#Podcast Metadata. Used by the RSS Feed, which currently isn't in use. So you can avoid this
+podcast_title: Jekyll Podcaster
 podcast_author: Alessio Franceschi
-podcast_email: podcast@artedellalettura.it
-podcast_subtitle: "Quattro chiacchiere su libri e fumetti"
-podcast_summary: "Arte della Lettura è il Podcast dedicato a libri e fumetti con episodi su eventi, autori e temi libreschi."
-podcast_description: "Arte della Lettura è il Podcast dedicato a libri e fumetti con episodi su eventi, autori e temi libreschi."
+podcast_email: alessiofranceschi2@gmail.com
+podcast_subtitle: "A Jekyll Theme designed for Podcasters"
+podcast_summary: "A Jekyll Theme designed for Podcasters. This is your podcast's summary."
+podcast_description: "A Jekyll Theme designed for Podcasters. This is your podcast's description."
 podcast_explicit: "no"
 podcast_type: serial 
-podcast_lang: it
-podcast_launch: "2019-07-20"
+podcast_lang: en
+podcast_launch: "2019-07-20" #Launch date of your podcast
 podcast_copyright: "&#xA9;Alessio Franceschi"
 podcast_feed: 
 podcast_artwork: "/assets/img/Podcast_Cover.png"

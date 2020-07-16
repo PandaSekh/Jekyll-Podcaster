@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Episodi
+title: Episodes
 ---
 <div class = "episodes">
 
-<h2> Episodi </h2>
+<h2> Episodes </h2>
 <ul>
 {% for post in site.posts %}    
     {% if post.type == "main" %}
@@ -16,7 +16,7 @@ title: Episodi
 {% endfor %}
 </ul>
 
-<h2> Episodi Extra </h2>
+<h2> Extra Episodes </h2>
 <ul>
 {% for post in site.posts %}    
     {% if post.type == "extra" %}

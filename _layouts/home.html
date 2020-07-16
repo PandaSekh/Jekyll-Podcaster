@@ -1,9 +1,7 @@
 ---
 layout: default
-title: Home
 ---
 {% for post in paginator.posts %}
-
 
 
 <div class="post">
@@ -21,8 +19,11 @@ title: Home
 
         <div class = "info">
             <span>
-                <i class="far fa-calendar" aria-hidden="true"></i>
-                <time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{%- include date.html date=post.date -%}</time> - <i class="far fa-clock"></i> {{post.length}}
+              {% if site.data.settings.translate-date == true %}
+                <i class="far fa-calendar" aria-hidden="true"></i>{%- include date.html date=post.date -%}<span> - </span><i class="far fa-clock"></i> {{post.length}}
+              {% else %}
+                <i class="far fa-calendar" aria-hidden="true"></i>{{ post.date | date_to_long_string}}<span> - </span><i class="far fa-clock"></i> {{post.length}}
+              {% endif %}
             </span>
         </div>
     </div>

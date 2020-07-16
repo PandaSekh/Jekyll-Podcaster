@@ -3,9 +3,9 @@ var disqus_config = function () {
     this.page.identifier = document.location.pathname;
   };
 
-  (function() { // DON'T EDIT BELOW THIS LINE
+  (function() { 
     var d = document, s = d.createElement('script');
-    s.src = '//artedellalettura.disqus.com/embed.js';
+    s.src = '//yournickhere.disqus.com/embed.js'; //Edit here
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
   })();
