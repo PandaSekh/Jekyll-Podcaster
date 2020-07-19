@@ -1,7 +1,7 @@
 # [Jekyll Podcaster](https://jekyll-podcaster.netlify.app/)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/249c3da6-7b23-4b57-915d-71934329e306/deploy-status)](https://jekyll-podcaster.netlify.app/)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/PandaSekh/Jekyll-Podcaster/issues)
-![GitHub forks](https://img.shields.io/github/forks/PandaSekh/Jekyll-Podcaster)
+[![GitHub forks](https://img.shields.io/github/forks/PandaSekh/Jekyll-Podcaster)](https://github.com/PandaSekh/Jekyll-Podcaster/network)
 ## [Live Demo](https://jekyll-podcaster.netlify.app/)
 
 ![Homepage](https://raw.githubusercontent.com/PandaSekh/Jekyll-Podcaster/master/assets/screenshots/Homepage.png)
