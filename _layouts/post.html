@@ -30,7 +30,9 @@ layout: default
 
         {% include player.html file = file title = title %}
 
-        {% include video.html videoid = page.videoid %}
+        {% if page.videoid %}
+                {% include video.html videoid = page.videoid %}
+        {% endif %}
 
         {{ content }}
 
