@@ -4,7 +4,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/PandaSekh/Jekyll-Podcaster)
 ## [Live Demo](https://jekyll-podcaster.netlify.app/)
 
-![Homepage](https://raw.githubusercontent.com/PandaSekh/Jekyll-YAMT/master/assets/img/screenshots/Screenshot.png?raw=true)
+![Homepage](https://raw.githubusercontent.com/PandaSekh/Jekyll-Podcaster/master/assets/screenshots/Homepage.png)
 
 Jekyll Podcaster is a [Jekyll](http://jekyllrb.com) theme built for podcasters. Every podcast needs a great website and this theme helps you achieve that.
 
@@ -20,7 +20,7 @@ Jekyll Podcaster is a [Jekyll](http://jekyllrb.com) theme built for podcasters. 
 
 ## Screenshots
 Mobile:  
-![Mobile](https://raw.githubusercontent.com/PandaSekh/Jekyll-YAMT/master/assets/img/screenshots/Screenshot_mobile.png?raw=true)
+![Mobile](https://raw.githubusercontent.com/PandaSekh/Jekyll-Podcaster/master/assets/screenshots/Mobile.png)
 
 ## Installation
 
