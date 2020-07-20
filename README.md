@@ -8,6 +8,8 @@
 
 Jekyll Podcaster is a [Jekyll](http://jekyllrb.com) theme built for podcasters. Every podcast needs a great website and this theme helps you achieve that.
 
+Please note that this theme will not build a RSS feed for your podcast, meaning that this is just for showcasing your podcast and not for distributing it. You still need to use a distribution platform.
+
 ## Contents
 
 - [Screenshots](#screenshots)
@@ -76,6 +78,27 @@ Github Pages uses the [--safe flag](https://jekyllrb.com/docs/configuration/opti
 ## Customize
 TODO: Explain how to customize theme.
 
+### Basics
+In `_data/settings.yml` you can activate Disqus comments by adding your Disqus shortname. 
+`translate-date` activate translation for the months. If set to true, you can translate months in the file `_includes/date.html`.
+If `shownotes` is set to true, every post/episode will include the `_includes/shownotes.html` file. You can use it to add the same text under every post, in case you need to spam your merch store or Patreon, for example.
+
+### Links
+In `_data/settings.yml` you can add links next to the Podcast title, social links in the sidebar and links to your podcast. 
+The social links have a "type" attribute, which defines Font Awesome's font type (fas is solid, fab is brand). Out of the box this theme has support colors for a bunch of social. If your social isn't supported, just add the color in the `sidebar.css`.
+
+### Includes
+Modifying file in the `_includes` folder can break things, so please be careful. You should modify only these files:
+- `date.html` to translate the website to your language;
+- `playerjs.html` if you need to translate the player;
+- `shownotes.html` to change your shownotes.
+
+Everything else is modified automatically when you cnage your `settings.yml` and `config.yml` files.
+
+### Colors
+You can change colors in the `_sass/base.scss` and `_sass/sidebar.scss` files. 
+Changing the "wave" colors is a bit harder. You need to decode the svg in the `_scss/background.scss` file, the one in the `background-image` tag. To do that, please refer [to this website](https://mothereff.in/url). Once decoded, change the `path fill` attribute, then encode again and use it. 
+
 ### Images
 You need three different dimensions of your podcast cover for this website:
 - Podcast_Cover_500.jpg --> 500x500 pixels
@@ -83,6 +106,10 @@ You need three different dimensions of your podcast cover for this website:
 - Podcast_Cover.jpg --> High-Res, I use 3000x3000 pixels
 
 Put those images in the /assets/img/ folder.
+
+### config.yml
+It's the usual file in every Jekyll theme. Just compile it. The last part about the podcast metadata is optional, as at the moment this theme won't create a RSS feed. It's just there in case I find the time to add it in the future.
+
 
 ## Development
 

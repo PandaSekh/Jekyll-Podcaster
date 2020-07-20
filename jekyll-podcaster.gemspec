@@ -3,7 +3,7 @@
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-podcaster"
   spec.version       = "1.0.0"
-  spec.authors       = ["Alessio Franceschi"]
+  spec.authors       = ["PandaSekh"]
   spec.email         = ["alessiofranceschi2@gmail.com"]
 
   spec.summary       = "Jekyll theme for Podcasts"

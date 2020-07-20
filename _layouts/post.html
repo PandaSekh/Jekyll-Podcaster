@@ -36,8 +36,12 @@ layout: default
 
         {{ content }}
 
-        {% include shownotes.html %}
+        {% if site.data.settings.shownotes == true %}
+                {% include shownotes.html %}
+        {% endif %}
 
         
 </div>
-{%- include disqus.html -%}
+{% if site.settings.disqus-shortname %}
+        {%- include disqus.html -%}
+{% endif %}

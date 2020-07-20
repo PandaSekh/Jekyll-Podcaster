@@ -1,4 +1,5 @@
 $base-color: #01a0e4;
+$darker-color: rgba(0, 160, 227, 0.2);
 
 * {
     -webkit-box-sizing: border-box;
@@ -24,7 +25,7 @@ p{
         transition: background-color 0.1s cubic-bezier(.33,.66,.66,1);
     }
     a:hover{
-        background-color: rgba(1,160,228,0.3);
+        background-color: $darker-color;
         border-bottom: none;
     }
 }
