@@ -15,7 +15,12 @@ Please note that this theme will not build a RSS feed for your podcast, meaning 
 - [Screenshots](#screenshots)
 - [Installation](#installation)
 - [Customize](#customize)
+  - [Basics](#basics)
+  - [Links](#links)
+  - [Includes](#includes)
+  - [Colors](#colors)
   - [Images](#images)
+  - [config.yml](#config.yml)
 - [Development](#development)
 - [Credits](#credits)
 - [License](#license)
@@ -26,7 +31,7 @@ Mobile:
 
 ## Installation
 
-There are four way to use this theme: Netlify (suggested, as this theme has a contact module built-in working only on Netlify), Github Pages, as a gem-based theme, by forking this repo or by copying all the files into your directory.
+There are four way to use this theme: Netlify, Github Pages, as a gem-based theme and by forking this repo.
 
 ### Download the files
 You can [download the files](https://github.com/PandaSekh/Jekyll-Podcaster/releases/latest) and add them in your directory to start working.
@@ -36,7 +41,7 @@ You can [download the files](https://github.com/PandaSekh/Jekyll-Podcaster/relea
 1. [Fork this repo](https://github.com/PandaSekh/Jekyll-Podcaster/generate). You can copy only master, set it to private or public and name it however you want.
 2. Go to [Netlify](https://app.netlify.com/), create a New site from Git, choose your repo or all repos, no difference. Back to Netlify, select the recently forked repo.
 3. Owner and branch are good to go. In build command write `bundle exec jekyll build` and publishing directory should be `_site/`.
-4. Deploy. Your site will shortly be available. Under domain settings you can change your subdomain, or add a primary level one. 
+4. Deploy. Your site will shortly be available. Under domain settings you can change your subdomain, or add a primary level one.
 
 ### Github Pages
 
@@ -127,3 +132,5 @@ Theme designed and created by [Alessio Franceschi](https://github.com/PandaSekh/
 
 ## License
 The theme is available as open source under the terms of the [MIT License](https://github.com/PandaSekh/Jekyll-YAMT/blob/master/LICENSE.txt).
+TL;DR
+Use it for free but keep my name in the footer. Thanks!
