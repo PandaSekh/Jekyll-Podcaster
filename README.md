@@ -102,7 +102,8 @@ Everything else is modified automatically when you cnage your `settings.yml` and
 
 ### Colors
 You can change colors in the `_sass/base.scss` and `_sass/sidebar.scss` files. 
-Changing the "wave" colors is a bit harder. You need to decode the svg in the `_scss/background.scss` file, the one in the `background-image` tag. To do that, please refer [to this website](https://mothereff.in/url). Once decoded, change the `path fill` attribute, then encode again and use it. 
+Changing the "wave" colors is a bit harder. You need to decode the svg in the `_scss/background.scss` file, the one in the `background-image` tag. To do that, please refer [to this website](https://mothereff.in/url). Once decoded, change the `path fill` attribute, then encode again and use it.    
+Note: add this line before the encoded url: `data:image/svg+xml;utf8,`.
 
 ### Images
 You need three different dimensions of your podcast cover for this website:
