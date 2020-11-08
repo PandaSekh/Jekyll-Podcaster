@@ -44,7 +44,7 @@ layout: default
             {% else %}
                 {{ post.content | strip_html | truncatewords:100 }}
             {% endif %}
-            <span class = "continue-reading"><a href="{{ post.url | absolute_url }}">Continua</a></span> 
+            <span class = "continue-reading"><a href="{{ post.url | absolute_url }}">Continue</a></span> 
         </p> 
     </div>
 
@@ -55,7 +55,7 @@ layout: default
             {% else %}
                 {{ post.content | strip_html | truncatewords:30 }}
             {% endif %}
-            <span class = "continue-reading"><a href="{{ post.url | absolute_url }}">Continua</a></span> 
+            <span class = "continue-reading"><a href="{{ post.url | absolute_url }}">Continue</a></span> 
         </p> 
     </div>
 
