@@ -19,7 +19,7 @@
     <div id = "lista-siti">
         <ul id = "siti">
           {% for item in site.data.settings.websites-podcast  %}
-          <li><a href="{{ item.link | absolute_url}}"> {{ item.name }}</a></li>
+          <li><a href="{{ item.link }}"> {{ item.name }}</a></li>
           {% endfor %}
         </ul>
       </div>
