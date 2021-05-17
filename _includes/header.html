@@ -7,7 +7,7 @@
       <div id = "desktop-nav">
         <ul id = "desktop-menu">
           {% for item in site.data.settings.pages  %}
-          <li><a href="{{ item.url | absolute_url}}"> {{ item.name }}</a></li>
+          <li><a href="{{ item.link | absolute_url}}"> {{ item.name }}</a></li>
           {% endfor %}
         </ul>
       </div>
@@ -21,7 +21,7 @@
     
           <ul id = "menu">
             {% for item in site.data.settings.pages %}
-            <li><a href="{{ item.url | absolute_url}}">  {{ item.name }}</a></li>
+            <li><a href="{{ item.link | absolute_url}}">  {{ item.name }}</a></li>
             {% endfor %}
           </ul>
         </div>

@@ -1,11 +1,11 @@
 analytics-id: 
 #Pages
 pages:
-  - {name: 'Episodes', url: 'episodes.html'}
-  - {name: 'Patreon', url: '#'}
-  - {name: 'Shop', url: '#'}
-  - {name: 'GitHub', url: 'https://github.com/PandaSekh'}
-  - {name: 'Get This Theme', url: 'https://github.com/PandaSekh/Jekyll-Podcaster'}
+  - {name: 'Episodes', link: 'episodes.html'}
+  - {name: 'Patreon', link: '#'}
+  - {name: 'Shop', link: '#'}
+  - {name: 'GitHub', link: 'https://github.com/PandaSekh'}
+  - {name: 'Get This Theme', link: 'https://github.com/PandaSekh/Jekyll-Podcaster'}
 
 social:
   - {icon: 'instagram', type: "brand", link: '#'}
