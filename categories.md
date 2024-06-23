@@ -7,12 +7,11 @@ title: Categories
 {% for category in sorted_categories %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div id="#{{ category_name | slugize }}">
+    <div id="{{ category_name | slugize }}">
         <h2>{{ category_name }}</h2>
-
         <ul>
           {% for post in site.categories[category_name] %}
-            <li><a class="archive-link" href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
+            <li><a class="archive-link" href="{{ post.url | absolute_url}}">{{post.title}}</a></li>
           {% endfor %}
         </ul>
     </div>
